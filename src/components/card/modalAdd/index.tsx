@@ -11,7 +11,7 @@ import {
   useReduxSelector,
 } from "../../../store/index";
 import { addTask, updateTask } from "../../../store/modules/app";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const TaskModal: React.FC<IPropsModalAdd> = ({
   title,
@@ -19,6 +19,7 @@ const TaskModal: React.FC<IPropsModalAdd> = ({
   data,
   modalBackdropClicked,
 }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [status, setStatus] = useState<any[]>([]);
   const tasks = useReduxSelector((state: RootState) => state.app.tasks);
 

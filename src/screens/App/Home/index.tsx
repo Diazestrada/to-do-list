@@ -16,8 +16,8 @@ const HomeScreen = () => {
 
         <div style={{ marginTop: "2%" }} className="row text-center">
           {Array.isArray(data) &&
-            data.map((item) => (
-              <div className="col-4" key={item.uid}>
+            data.map((item, index) => (
+              <div className="col-md-4 col-sm-6 col-lg-6 col-xl-4" key={index}>
                 <TaskCard
                   uid={item.uid}
                   title={item.title}

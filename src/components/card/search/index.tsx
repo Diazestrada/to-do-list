@@ -12,12 +12,11 @@ const SearchTask = () => {
   const data = useReduxSelector((state: RootState) => state.app.tasks);
 
   const handlerSearch = (filter: string) => {
-    const search = data.filter(
+    data.filter(
       (item) =>
         item.title.toLowerCase().includes(filter.toLowerCase()) ||
         item.status.toLowerCase().includes(filter.toLowerCase())
     );
-    
   };
 
   const FormFilter = Yup.object().shape({
