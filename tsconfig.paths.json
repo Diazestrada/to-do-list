@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {    
+    "baseUrl": "src",
+    "paths": {      
+      "components": ["components"],
+      "components/*": ["components/*"],
+      "routes": ["routes"],
+      "routes/*": ["routes/*"],
+      "screens": ["screens"],
+      "screens/*": ["screens/*"],
+      "store": ["store"],
+      "store/*": ["store/*"],
+      "types": ["types"],
+      "types/*": ["types/*"],
+      "utils": ["utils"],
+      "utils/*": ["utils/*"]      
+    }    
+  }
+}
